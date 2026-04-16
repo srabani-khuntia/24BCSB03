@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonnaci</title>
+    <script>
+        function generateFibonacci(n){
+            var a = 0;
+            var b = 1;
+            var c = 3
+            document.write(a+" "+b+" ");
+            while (c <= n){
+                sum = a + b;
+                a = b;
+                b = sum;
+                document.write(sum+" ");
+                c += 1
+            }
+        }
+        generateFibonacci(5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
