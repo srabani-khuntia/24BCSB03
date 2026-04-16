@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Visibility</title>
+</head>
+<body>
+    <p id="togglePara">This is a paragraph of text. Click the button to hide or show me.</p>
+    <button id="toggleBtn" onclick="toggleVisibility()">Hide</button>
+
+    <script>
+        function toggleVisibility() {
+            var para = document.getElementById("togglePara");
+            var btn = document.getElementById("toggleBtn");
+            if (para.style.display === "none") {
+                para.style.display = "block";
+                btn.innerHTML = "Hide";
+            } else {
+                para.style.display = "none";
+                btn.innerHTML = "Show";
+            }
+        }
+    </script>
+</body>
+</html>
