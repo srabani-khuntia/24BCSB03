@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+<body>
+    <button onclick="changeCounter(-1)">-</button>
+    <input type="text" id="counterValue" value="0" size="3" style="text-align: center;" readonly>
+    <button onclick="changeCounter(1)">+</button>
+
+    <script>
+        function changeCounter(change) {
+            var input = document.getElementById("counterValue");
+            var currentValue = parseInt(input.value);
+            var newValue = currentValue + change;
+            if (newValue >= 0) {
+                input.value = newValue;
+            }
+        }
+    </script>
+</body>
+</html>
