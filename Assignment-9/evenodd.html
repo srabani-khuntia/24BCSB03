@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>  
+        var a = new Array(3,4,4,5,8,3);  
+        var odd = new Array();
+        var even = new Array();  
+        var i;  
+        for(i = 0; i < a.length; i++){
+            if(a[i] % 2 == 0){
+                even.push(a[i]);
+            }
+            else {
+                odd.push(a[i])
+            }
+        }
+        document.write(even);
+        document.write("<br>");
+        document.write(odd);  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
