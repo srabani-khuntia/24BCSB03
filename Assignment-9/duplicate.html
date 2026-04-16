@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Remove Duplicates</title>
+<script language="JavaScript">
+    var a = new Array(12, 35, 1, 10, 34, 1, 12, 5);
+    var unique = new Array();
+    var i, j;
+
+    for (i = 0; i < a.length; i++) {
+        var isDuplicate = false;
+        
+        // Check if the current element is already in the unique array
+        for (j = 0; j < unique.length; j++) {
+            if (a[i] == unique[j]) {
+                isDuplicate = true;
+                break;
+            }
+        }
+
+        // If it's not a duplicate, add it to the unique array
+        if (!isDuplicate) {
+            unique.push(a[i]);
+        }
+    }
+
+    document.write("Original Array: ");
+    for (i = 0; i < a.length; i++) {
+        document.write(a[i] + " ");
+    }
+    
+    document.write("<br><br>");
+
+    document.write("Array after removing duplicates: ");
+    for (i = 0; i < unique.length; i++) {
+        document.write(unique[i] + " ");
+    }
+</script>
+</head>
+<body bgcolor="yellow" text="black">
+</body>
+</html>
