@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Palindrome</title>
+		<script>
+			var n, org, rev=0,rem=0;
+			org=parseInt(prompt("Enter a number: "));
+			n=org;
+			while(n|=0)
+			{
+				rem=n%10;
+				rev=rev*10 + rem;
+				n/=10;
+			}
+            if (org==rev)
+            	document.write("Palindrome.");
+            else
+                document.write("Not a Palindrome.")
+		</script>
+	</head>
+	<body bgcolor="pink" text="green">
+	</body>
+</html>
