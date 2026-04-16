@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Second Largest</title>
+<script language="JavaScript">
+    var a = new Array(12, 35, 1, 10, 34, 1);
+    var i;
+    
+    var max1 = -999999;
+    var max2 = -999999;
+
+    for(i = 0; i < a.length; i++) {
+        if(a[i] > max1) {
+            max2 = max1;
+            max1 = a[i];
+        } 
+        else if(a[i] > max2 && a[i] != max1) {
+            max2 = a[i];
+        }
+    }
+
+    document.write("Array elements: ");
+    for(i = 0; i < a.length; i++) {
+        document.write(a[i] + " ");
+    }
+    document.write("<br><br>");
+
+    if (max2 == -999999) {
+        document.write("There is no second largest element.");
+    } else {
+        document.write("The second largest element is: " + max2);
+    }
+</script>
+</head>
+<body bgcolor="red" text="blue">
+</body>
+</html>
