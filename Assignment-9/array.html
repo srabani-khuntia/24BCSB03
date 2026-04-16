@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Calculation Assignment</title>
+</head>
+<body>
+
+    <script>
+        // 1. Ask the user for input using a prompt
+        let input = prompt("Enter numbers separated by commas (e.g. 10, 20, 30):");
+
+        if (input) {
+            // 2. Convert the string input into an array of numbers
+            let stringArray = input.split(",");
+            let numArray = [];
+
+            for (let i = 0; i < stringArray.length; i++) {
+                let num = parseFloat(stringArray[i].trim());
+                if (!isNaN(num)) {
+                    numArray.push(num);
+                }
+            }
+
+            // 3. Check if we have valid numbers
+            if (numArray.length > 0) {
+                let sum = 0;
+                let largest = numArray[0];
+                let smallest = numArray[0];
+
+                // 4. Calculate stats
+                for (let i = 0; i < numArray.length; i++) {
+                    sum += numArray[i];
+
+                    if (numArray[i] > largest) {
+                        largest = numArray[i];
+                    }
+
+                    if (numArray[i] < smallest) {
+                        smallest = numArray[i];
+                    }
+                }
+
+                let average = sum / numArray.length;
+
+                // 5. Print results directly to the screen
+                document.write("<h2>Array Statistics Results</h2>");
+                document.write("<p><b>Entered Array:</b> " + numArray.join(", ") + "</p>");
+                document.write("<p><b>Sum:</b> " + sum + "</p>");
+                document.write("<p><b>Average:</b> " + average.toFixed(2) + "</p>");
+                document.write("<p><b>Largest:</b> " + largest + "</p>");
+                document.write("<p><b>Smallest:</b> " + smallest + "</p>");
+
+            } else {
+                document.write("No valid numbers were entered.");
+            }
+        } else {
+            document.write("Input was cancelled.");
+        }
+    </script>
+
+</body>
+</html>
