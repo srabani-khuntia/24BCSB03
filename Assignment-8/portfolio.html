@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Srabani's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #38bdf8;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero-img img {
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 3px solid #38bdf8;
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background-color: #e2e8f0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Srabani's Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="hero">
+        <h1>Hi, I am Srabani</h1>
+        <p>B.Tech CSE Student & Aspiring AI Engineer</p>
+        <div class="hero-img">
+            <img src="Srabani-Khuntia.jpeg" alt="My Photo">
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Srabani Khuntia, a 2nd-year B.Tech Computer Science student at Silicon University, actively exploring various domains in technology with curiosity and a long-term learning mindset. My areas of interest include Artificial Intelligence, Machine Learning, Web Development, and other emerging technologies that shape modern computing. I have a solid understanding of programming languages like C, Java, Python, and database management with SQL. I'm continuously improving my programming abilities through practice and structured learning. Strengthening my problem-solving skills is currently my main focus, as I believe it's the backbone of excellence in any technical role. I enjoy participating in events, tech sessions, and learning opportunities that expand my understanding of emerging technologies and their real-world applications. I believe in steady, consistent growth and value every learning experience that pushes me forward. I'm open to internships, collaborations, and opportunities that support my growth and help me gain wider exposure to the tech industry. Learning consistently. Growing purposefully. </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Understanding algorithms that help computers learn from data.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Vision</h3>
+                <p>Using technology to help computers see and identify images.</p>
+            </div>
+
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Learning the basics of logic and memory management.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Writing clean code for automation and data analysis.</p>
+            </div>
+
+            <div class="card">
+                <h3>Java</h3>
+                <p>Building strong applications using object-oriented concepts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Flipkart Clone</h3>
+                <p>Replication of Flipkart and integrating its functionalities.</p>
+            </div>
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>A simple tool made with HTML, CSS & JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="srabanikhuntia2006@gmail.com">srabanikhuntia2006@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/srabani-khuntia/">https://www.linkedin.com/in/srabani-khuntia/</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Srabani Khuntia</p>
+    </footer>
+
+</body>
+</html>
